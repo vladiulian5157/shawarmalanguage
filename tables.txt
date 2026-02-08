@@ -1,0 +1,24 @@
+---SCOPE: global---
+   Functii:
+     calculeaza_rest
+     main
+
+  ---SCOPE: class Meniu---
+     Variabile:
+       pret_mare : int = 0
+       pret_mic : int = 0
+
+  ---SCOPE: function calculeaza_rest---
+     Variabile:
+       plata : int = 0
+       total : int = 0
+
+  ---SCOPE: function main---
+     Variabile:
+       bani_client : int = 50
+       bucati_taiate : int = 3
+       cost_shaorma : int = 30
+       mesaj_intampinare : string = Bine ati venit la Kiwans!
+       pret_cartofi : float = 5.500000
+       rest_de_dat : int = 20
+

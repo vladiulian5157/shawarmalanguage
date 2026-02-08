@@ -1,0 +1,102 @@
+shaorma A {
+  carne x;
+  carne y;
+  cartofi z;
+
+  dietetic A() {
+    self.x = 19;
+    y = 90;
+  }
+
+  carne g(carne z) {
+    impacheteaza zzz * 100;
+  }
+
+  cartofi fl(carne x) {
+    daca_are (x == 20) {
+      impacheteaza 10.0;
+    }
+    impacheteaza 20.0;
+  }
+}
+
+carne f(carne z, cartofi x, salata b) {
+  daca_are (b == cu_de_toate && x > 1.0) {
+    impacheteaza z * 10;
+  }
+  impacheteaza z;
+}
+
+shaorma B {
+  carne b;
+  carne bb;
+
+  dietetic B() {
+    self.b = 5;
+    self.bb = 10;
+  }
+
+  carne g(carne z) {
+    impacheteaza z + b;
+  }
+
+  carne f(carne z) {
+    daca_are (z > 4) {
+      carne var;
+      var = 0;
+      impacheteaza var + 5;
+    }
+    impacheteaza b + bb * z;
+  }
+}
+
+sos bfunc(salata b, sos s) {
+  daca_are (b == cu_de_toate) {
+    impacheteaza s;
+  } fara {
+    impacheteaza "bau";
+  }
+}
+
+cartofi fx;
+carne x;
+carne z;
+sos s;
+carne ix;
+carne ix;  
+salata b1;
+salata b2;
+B obb;
+A oba;
+
+comanda() {
+  zzz = 10;
+
+  fx = 65.0;
+  ix = 10;
+
+  serveste(fx - 65.0 + f(10, 10.0, cu_de_toate));
+
+  fx = fx * 10 + f(10, 10.0, cu_de_toate) + ix;
+
+  s = "test";
+  b1 = cu_de_toate;
+  b2 = b1;
+
+  serveste(s + b1);
+  b1 = b1 + b2;
+  fx = b1 || b2;
+
+  oba = proaspat A();
+  obb = proaspat B();
+
+  oba.x = oba.b + bfunc(b1, s);
+  oba.x = obb.b + fx;
+  serveste(f(ix, fx, fx)); 
+  serveste(f(ix, fx, cu_de_toate, cu_de_toate));
+
+  oba.f(ix);
+  oba.g(fx);    
+  oba.zzz = 100; 
+  oba.x = oba.x + oba.fl(ix);
+}
